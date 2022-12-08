@@ -1,0 +1,31 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<link type="text/css" rel="stylesheet" href="style2.css" />
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="sidenav">
+         <div class="login-main-text">
+            <h2>Lab15Nina<br> Pagina de Login</h2>
+            <p>Ingresar o registrarte para acceder.</p>
+         </div>
+      </div>
+      <div class="main">
+         <div class="col-md-6 col-sm-12">
+            <div class="login-form">
+                <form class="login-form" method="post" th:action="@{/login}">
+                  <div class="form-group">
+                     <label>User Name</label>
+                     <input name="username" type="text" class="form-control" placeholder="User Name">
+                  </div>
+                  <div class="form-group">
+                     <label>Password</label>
+                     <input name = "password"type="password" class="form-control" placeholder="Password">
+                     <input name="_csrf" type="hidden" value="2d191443-fea5-46b3-a16b-ebb82d74366c" />
+                  </div>
+                  <button type="submit" class="btn btn-black">Login</button>
+                  <button type="submit" class="btn btn-secondary">Registrarse</button>
+               </form>
+            </div>
+         </div>
+      </div>
